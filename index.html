@@ -1,0 +1,330 @@
+---
+layout: default
+title: Home
+---
+
+<!-- Hero Section -->
+<section id="home" class="hero">
+    <div class="sparkle sparkle-top-left"></div>
+    <div class="sparkle sparkle-top-right"></div>
+    
+    <div class="container hero-container">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                Munongedzi <span class="italic-accent">"Muno"</span> Mabhoko
+            </h1>
+            <p class="hero-subtitle">AI Engineer | Data Science | Analytics | Responsible AI</p>
+            <p class="hero-value-prop">
+                I build reliable, human-centered ML systems and analytics that ship into real workflows, with a governance and validation mindset.
+            </p>
+            
+            <div class="hero-buttons">
+                <a href="#projects" class="btn-primary">View Projects</a>
+                <a href="#contact" class="btn-secondary">Contact Me</a>
+            </div>
+            
+            <div class="quick-stats">
+                <div class="stat-item">
+                    <strong>5+</strong>
+                    <span>Years Experience</span>
+                </div>
+                <div class="stat-item">
+                    <strong>3</strong>
+                    <span>Key Domains</span>
+                </div>
+                <div class="stat-item">
+                    <strong>Responsible AI</strong>
+                    <span>Current Focus</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="hero-image">
+            <div class="oval-frame">
+                <img src="{{ '/assets/img/portrait.jpg' | relative_url }}" alt="Munongedzi Mabhoko">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="about dark-panel">
+    <div class="container">
+        <div class="about-grid">
+            <div class="about-image">
+                <div class="rounded-frame">
+                    <img src="{{ '/assets/img/about-photo.jpg' | relative_url }}" alt="About Muno">
+                </div>
+            </div>
+            
+            <div class="about-content">
+                <h2>About Me</h2>
+                <p class="about-bio">
+                    I'm an AI engineer passionate about building machine learning systems that solve real problems responsibly. 
+                    With a background spanning data science, analytics, and ML engineering, I focus on delivering production-ready 
+                    solutions that teams can trust. My work emphasizes rigorous validation, transparent governance, and systems 
+                    designed with human needs at the center.
+                </p>
+                
+                <div class="highlights">
+                    <h3>Highlights</h3>
+                    <ul>
+                        <li>Built and deployed ML pipelines serving thousands of daily predictions with robust monitoring</li>
+                        <li>Led cross-functional teams to implement responsible AI frameworks and bias mitigation strategies</li>
+                        <li>Developed analytics dashboards that became core decision-making tools for executive leadership</li>
+                    </ul>
+                </div>
+                
+                <div class="key-skills">
+                    <h3>Key Skills</h3>
+                    <div class="skill-pills">
+                        <span class="pill">Machine Learning</span>
+                        <span class="pill">Python</span>
+                        <span class="pill">TensorFlow</span>
+                        <span class="pill">SQL</span>
+                        <span class="pill">MLOps</span>
+                        <span class="pill">Data Visualization</span>
+                        <span class="pill">Model Governance</span>
+                        <span class="pill">A/B Testing</span>
+                        <span class="pill">ETL Pipelines</span>
+                        <span class="pill">Cloud (AWS/GCP)</span>
+                        <span class="pill">Tableau</span>
+                        <span class="pill">Statistical Analysis</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Skills Section -->
+<section id="skills" class="skills">
+    <div class="container">
+        <h2>Technical Expertise</h2>
+        
+        <div class="skills-grid">
+            <div class="skill-column">
+                <h3>ML & AI Engineering</h3>
+                <ul>
+                    <li>Deep learning model development and optimization</li>
+                    <li>NLP and computer vision applications</li>
+                    <li>Model deployment and serving infrastructure</li>
+                    <li>Automated retraining pipelines</li>
+                    <li>Feature engineering and selection</li>
+                    <li>Hyperparameter tuning and AutoML</li>
+                </ul>
+            </div>
+            
+            <div class="skill-column">
+                <h3>Data Science & Analytics</h3>
+                <ul>
+                    <li>Statistical modeling and hypothesis testing</li>
+                    <li>Predictive analytics and forecasting</li>
+                    <li>Customer segmentation and clustering</li>
+                    <li>A/B testing and experimentation design</li>
+                    <li>Business intelligence dashboard development</li>
+                    <li>Data storytelling and visualization</li>
+                </ul>
+            </div>
+            
+            <div class="skill-column">
+                <h3>Responsible AI & Governance</h3>
+                <ul>
+                    <li>Bias detection and mitigation strategies</li>
+                    <li>Model explainability (SHAP, LIME)</li>
+                    <li>Fairness metrics and evaluation</li>
+                    <li>Model documentation and risk assessment</li>
+                    <li>Privacy-preserving ML techniques</li>
+                    <li>Regulatory compliance frameworks</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="tools-used">
+            <h3>Tools & Technologies</h3>
+            <div class="tool-icons">
+                <div class="tool-icon" title="Python">Py</div>
+                <div class="tool-icon" title="TensorFlow">TF</div>
+                <div class="tool-icon" title="PyTorch">PT</div>
+                <div class="tool-icon" title="Scikit-learn">SK</div>
+                <div class="tool-icon" title="SQL">SQL</div>
+                <div class="tool-icon" title="Docker">Dk</div>
+                <div class="tool-icon" title="Git">Git</div>
+                <div class="tool-icon" title="AWS">AWS</div>
+                <div class="tool-icon" title="Tableau">TB</div>
+                <div class="tool-icon" title="Jupyter">Jp</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects" class="projects dark-panel">
+    <div class="container">
+        <h2>Featured Projects</h2>
+        <p class="section-intro">A selection of work demonstrating my approach to building production ML systems</p>
+        
+        <div class="projects-grid">
+            {% for project in site.projects limit:6 %}
+                {% include project-card.html project=project %}
+            {% endfor %}
+        </div>
+        
+        <div class="view-all">
+            <a href="/projects" class="btn-secondary">View All Projects</a>
+        </div>
+    </div>
+</section>
+
+<!-- Social Proof Section -->
+<section id="social-proof" class="social-proof">
+    <div class="container">
+        <h2>Recognition & Community</h2>
+        
+        <div class="proof-grid">
+            <div class="proof-category">
+                <h3>Press & Mentions</h3>
+                <div class="proof-items">
+                    <div class="proof-item">
+                        <h4>Featured in AI Weekly</h4>
+                        <p class="proof-year">2024</p>
+                        <p>Article on implementing fairness metrics in production ML systems</p>
+                        <a href="#" class="proof-link">Read More →</a>
+                    </div>
+                    <div class="proof-item">
+                        <h4>Tech Podcast Guest</h4>
+                        <p class="proof-year">2023</p>
+                        <p>Discussed responsible AI practices and governance frameworks</p>
+                        <a href="#" class="proof-link">Listen →</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="proof-category">
+                <h3>Certifications</h3>
+                <div class="proof-items">
+                    <div class="proof-item">
+                        <h4>AWS Certified Machine Learning – Specialty</h4>
+                        <p class="proof-year">2023</p>
+                        <p>Advanced certification in ML solution design and implementation</p>
+                    </div>
+                    <div class="proof-item">
+                        <h4>Google Cloud Professional ML Engineer</h4>
+                        <p class="proof-year">2022</p>
+                        <p>Expertise in designing and building ML models on GCP</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="proof-category">
+                <h3>Awards & Recognition</h3>
+                <div class="proof-items">
+                    <div class="proof-item">
+                        <h4>Innovation Award</h4>
+                        <p class="proof-year">2024</p>
+                        <p>Recognition for implementing automated bias detection pipeline</p>
+                    </div>
+                    <div class="proof-item">
+                        <h4>Hackathon Winner</h4>
+                        <p class="proof-year">2023</p>
+                        <p>First place for ML-powered accessibility solution</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="proof-category">
+                <h3>Conference Speaking</h3>
+                <div class="proof-items">
+                    <div class="proof-item">
+                        <h4>MLOps Summit 2024</h4>
+                        <p class="proof-year">2024</p>
+                        <p>Talk: "Building Trust in Production ML Systems"</p>
+                        <a href="#" class="proof-link">View Slides →</a>
+                    </div>
+                    <div class="proof-item">
+                        <h4>Data Science Conference</h4>
+                        <p class="proof-year">2023</p>
+                        <p>Workshop on implementing responsible AI frameworks</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="proof-category">
+                <h3>Professional Communities</h3>
+                <div class="proof-items">
+                    <div class="proof-item">
+                        <h4>AI Ethics Board Member</h4>
+                        <p class="proof-year">2023–Present</p>
+                        <p>Contributing to industry standards for responsible AI deployment</p>
+                    </div>
+                    <div class="proof-item">
+                        <h4>Data Science Mentor</h4>
+                        <p class="proof-year">2022–Present</p>
+                        <p>Mentoring early-career professionals in ML and analytics</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="contact dark-panel">
+    <div class="sparkle sparkle-bottom-left"></div>
+    <div class="sparkle sparkle-bottom-right"></div>
+    
+    <div class="container">
+        <div class="contact-header">
+            <h2>Let's Work Together</h2>
+            <p>Interested in collaborating on AI/ML projects or discussing responsible AI practices? I'd love to hear from you.</p>
+        </div>
+        
+        <div class="contact-grid">
+            <div class="contact-image">
+                <div class="circle-frame">
+                    <img src="{{ '/assets/img/contact-photo.jpg' | relative_url }}" alt="Contact Muno">
+                </div>
+            </div>
+            
+            <div class="contact-info">
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <strong>Email</strong>
+                        <a href="mailto:mmunongedzi@gmail.com">mmunongedzi@gmail.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <strong>LinkedIn</strong>
+                        <a href="https://www.linkedin.com/in/placeholder" target="_blank">linkedin.com/in/placeholder</a>
+                    </div>
+                    <div class="contact-item">
+                        <strong>Phone</strong>
+                        <a href="tel:+1">+1 (placeholder)</a>
+                    </div>
+                    <div class="contact-item">
+                        <strong>Location</strong>
+                        <span>Indianapolis, IN</span>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <p class="form-note"><em>Note: This form is visual only. Please use the email link above to contact me.</em></p>
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" disabled>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" disabled>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="4" disabled></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary" disabled>Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

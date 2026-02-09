@@ -1,0 +1,26 @@
+# Image Placeholders
+
+Replace these placeholder files with your actual images:
+
+## Main Photos (Required):
+1. portrait.jpg - Your main hero image (800x1000px, vertical)
+2. about-photo.jpg - About section photo (600x800px, vertical) 
+3. contact-photo.jpg - Contact section photo (400x400px, square)
+
+## Project Images:
+Add screenshots for each project to the /projects/ subfolder:
+- bias-detection.jpg
+- churn-prediction.jpg
+- document-classification.jpg
+- executive-dashboard.jpg
+- recommendation-engine.jpg
+- fraud-detection.jpg
+
+All project images should be 640x480px (4:3 ratio)
+
+## Tips:
+- Use high-quality JPG format
+- Optimize images (keep under 500KB each)
+- Ensure good lighting and clear focus
+- Professional photos work best for main portrait
+- Use consistent style across all images

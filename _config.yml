@@ -1,0 +1,23 @@
+# Site settings
+title: Munongedzi "Muno" Mabhoko
+email: mmunongedzi@gmail.com
+description: >-
+  AI Engineer | Data Science | Analytics | Responsible AI
+baseurl: ""
+url: ""
+
+# Build settings
+markdown: kramdown
+permalink: /blog/:year/:month/:day/:title/
+
+# Collections
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name/
+
+# Exclude from processing
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
