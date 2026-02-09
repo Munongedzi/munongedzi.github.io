@@ -5,7 +5,8 @@ description: >-
   AI Engineer | Data Science | Analytics | Responsible AI
 baseurl: ""
 url: ""
-
+plugins:
+  - jekyll-feed
 # Build settings
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title/
