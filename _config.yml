@@ -1,5 +1,5 @@
 # Site settings
-title: Munongedzi "Muno" Mabhoko
+title: Munongedzi  Mabhoko
 email: mmunongedzi@gmail.com
 description: >-
   AI Engineer | Data Science | Analytics | Responsible AI
@@ -19,5 +19,4 @@ collections:
 # Exclude from processing
 exclude:
   - README.md
-  - Gemfile
-  - Gemfile.lock
+ 
