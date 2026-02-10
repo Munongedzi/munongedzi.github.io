@@ -1,66 +1,76 @@
-// Mobile Navigation Toggle
-document.addEventListener('DOMContentLoaded', function() {
-  const navToggle = document.getElementById('navToggle');
-  const navMenu = document.getElementById('navMenu');
-  
-  if (navToggle && navMenu) {
-    navToggle.addEventListener('click', function() {
-      navMenu.classList.toggle('active');
-      
-      // Animate hamburger
-      const spans = navToggle.querySelectorAll('span');
-      if (navMenu.classList.contains('active')) {
-        spans[0].style.transform = 'rotate(45deg) translate(5px, 5px)';
-        spans[1].style.opacity = '0';
-        spans[2].style.transform = 'rotate(-45deg) translate(7px, -6px)';
-      } else {
-        spans[0].style.transform = 'none';
-        spans[1].style.opacity = '1';
-        spans[2].style.transform = 'none';
-      }
-    });
-    
-    // Close menu when clicking a link
-    const navLinks = navMenu.querySelectorAll('a');
-    navLinks.forEach(link => {
-      link.addEventListener('click', function() {
-        navMenu.classList.remove('active');
-        const spans = navToggle.querySelectorAll('span');
-        spans[0].style.transform = 'none';
-        spans[1].style.opacity = '1';
-        spans[2].style.transform = 'none';
-      });
-    });
+@media (max-width: 968px) {
+  .hero {
+    min-height: auto;
+    padding: var(--spacing-lg) 0;
   }
   
-  // Smooth scroll for anchor links
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
-      const href = this.getAttribute('href');
-      if (href === '#') return;
-      
-      e.preventDefault();
-      const target = document.querySelector(href);
-      
-      if (target) {
-        const offsetTop = target.offsetTop - 80; // Account for sticky nav
-        window.scrollTo({
-          top: offsetTop,
-          behavior: 'smooth'
-        });
-      }
-    });
-  });
-  
-  // Add active state to navbar on scroll
-  const navbar = document.getElementById('navbar');
-  if (navbar) {
-    window.addEventListener('scroll', function() {
-      if (window.scrollY > 50) {
-        navbar.style.boxShadow = '0 2px 10px rgba(0,0,0,0.1)';
-      } else {
-        navbar.style.boxShadow = 'none';
-      }
-    });
+  .hero-container {
+    grid-template-columns: 1fr;
+    text-align: left;
+    gap: var(--spacing-md);
   }
-});
+  
+  /* Keep image and content side by side on mobile */
+  .hero-content {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Move image next to name, LinkedIn style */
+  .hero-image {
+    float: right;
+    margin-left: var(--spacing-md);
+    margin-bottom: var(--spacing-sm);
+  }
+  
+  .hero-buttons {
+    justify-content: flex-start;
+    clear: both;
+  }
+  
+  .quick-stats {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: var(--spacing-md);
+    clear: both;
+  }
+  
+  .oval-frame {
+    width: 120px;
+    height: 150px;
+  }
+}
+
+/* Even smaller screens */
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 1.75rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 0.9rem;
+  }
+  
+  .hero-value-prop {
+    font-size: 0.95rem;
+    clear: both;
+  }
+  
+  .oval-frame {
+    width: 100px;
+    height: 125px;
+  }
+  
+  .quick-stats {
+    gap: var(--spacing-sm);
+  }
+  
+  .stat-item strong {
+    font-size: 1.1rem;
+  }
+  
+  .stat-item span {
+    font-size: 0.75rem;
+  }
+}
