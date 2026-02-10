@@ -813,20 +813,27 @@ section {
 
 .proof-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(4, 1fr);
   gap: var(--spacing-lg);
+}
+
+.proof-category {
+  display: flex;
+  flex-direction: column;
 }
 
 .proof-category h3 {
   color: var(--rose-accent);
   margin-bottom: var(--spacing-md);
   font-size: 1.25rem;
+  text-align: center;
 }
 
 .proof-items {
   display: flex;
   flex-direction: column;
   gap: var(--spacing-md);
+  flex: 1;
 }
 
 .proof-item {
@@ -835,20 +842,18 @@ section {
   border-radius: var(--border-radius);
   border-left: 4px solid var(--gold-accent);
   box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-  margin-bottom: var(--spacing-md);
+  transition: var(--transition);
 }
 
-.proof-category {
-  margin-bottom: var(--spacing-lg);
-}
-
-.proof-category:last-child {
-  margin-bottom: 0;
+.proof-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
 }
 
 .proof-item h4 {
   color: var(--charcoal);
   margin-bottom: 0.25rem;
+  font-size: 1rem;
 }
 
 .proof-year {
@@ -861,6 +866,7 @@ section {
 .proof-item p {
   font-size: 0.9375rem;
   margin-bottom: 0.5rem;
+  line-height: 1.5;
 }
 
 .proof-link {
@@ -874,18 +880,26 @@ section {
   text-decoration: underline;
 }
 
-/* Better spacing for social proof categories */
-@media (max-width: 768px) {
+/* Tablet - 2 columns */
+@media (max-width: 968px) {
+  .proof-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-md);
+  }
+}
+
+/* Mobile - 1 column */
+@media (max-width: 640px) {
   .proof-grid {
     grid-template-columns: 1fr;
   }
   
   .proof-category {
-    margin-bottom: var(--spacing-xl);
+    margin-bottom: var(--spacing-md);
   }
   
-  .proof-item {
-    margin-bottom: var(--spacing-sm);
+  .proof-category:last-child {
+    margin-bottom: 0;
   }
 }
 /* ====================================
