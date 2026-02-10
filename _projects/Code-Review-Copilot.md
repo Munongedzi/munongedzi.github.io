@@ -3,7 +3,7 @@ layout: project
 title: AI Code Review Copilot — Beyond Engineering
 outcome: Reduced manual review effort while improving code quality and security awareness
 tags: [Generative AI, Developer Tools, MLOps, Software Engineering]
-image: /assets/img/projects/code-review-copilot.jpg
+image: /assets/img/projects/code-review-copilot.png
 ---
 
 ## Problem
