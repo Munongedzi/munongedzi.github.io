@@ -3,7 +3,7 @@ layout: project
 title: Predictive Reliability Platform — Beyond Engineering
 outcome: Shifted operations from reactive to proactive incident management
 tags: [ML, Streaming Data, MLOps, Reliability Engineering]
-image: /assets/img/projects/reliability-platform.jpg
+image: /assets/img/projects/reliability-platform.jpeg
 ---
 Problem
 
