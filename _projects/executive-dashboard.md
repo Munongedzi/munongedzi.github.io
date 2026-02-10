@@ -3,9 +3,7 @@ layout: project
 title: Executive Analytics Dashboard - Beyond Engineering
 outcome: Became primary tool for C-suite decision making
 tags: [Data Visualization, BI, Leadership]
-image: /assets/img/projects/executive-dashboard.jpg
-github_url: 
-demo_url: 
+image: /assets/img/projects/executive-dashboard.png
 ---
 
 ## Problem
