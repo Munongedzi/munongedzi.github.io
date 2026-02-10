@@ -1,12 +1,12 @@
 ---
 layout: project
-title: Automated Bias Detection Pipeline
-outcome: Reduced model bias by 40% with automated monitoring
+title: Intelligent Data Quality & Validation System — Beyond Engineering
+outcome: Delivered cleaner, more reliable datasets that reduced recurring data errors and increased stakeholder confidence in downstream analytics and ML results.
 tags: [MLOps, Responsible AI, Python]
-image: /assets/img/projects/bias-detection.jpg
-github_url: https://github.com/placeholder/bias-detection
-demo_url: 
+image: /assets/img/projects/bias-detection.jpg 
 ---
+
+
 
 ## Problem
 
