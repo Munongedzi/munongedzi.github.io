@@ -3,7 +3,7 @@ layout: project
 title: AI Documentation Generator for Large Codebases
 outcome: Reduced documentation burden and improved engineer onboarding
 tags: [NLP, Developer Tools, Automation, Software Architecture]
-image: /assets/img/projects/doc-generator.jpg
+image: /assets/img/projects/doc-generator.png
 ---
 
 ## Problem
