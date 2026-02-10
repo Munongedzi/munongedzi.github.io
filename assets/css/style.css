@@ -347,116 +347,82 @@ section {
    HERO SECTION
    ==================================== */
 
-.hero {
-  position: relative;
-  min-height: 90vh;
-  display: flex;
-  align-items: center;
-  background-color: var(--ivory);
-}
-
-.hero-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: var(--spacing-lg);
-  align-items: center;
-}
-
-.hero-content {
-  max-width: 550px;
-}
-
-.hero-title {
-  margin-bottom: var(--spacing-sm);
-}
-
-.hero-subtitle {
-  font-size: 1.125rem;
-  color: var(--warm-taupe);
-  margin-bottom: var(--spacing-md);
-}
-
-.hero-value-prop {
-  font-size: 1.125rem;
-  margin-bottom: var(--spacing-lg);
-  line-height: 1.7;
-}
-
-.hero-buttons {
-  display: flex;
-  gap: var(--spacing-sm);
-  margin-bottom: var(--spacing-lg);
-  flex-wrap: wrap;
-}
-
-.quick-stats {
-  display: flex;
-  gap: var(--spacing-lg);
-  padding-top: var(--spacing-md);
-  border-top: 2px solid var(--sand);
-}
-
-.stat-item {
-  display: flex;
-  flex-direction: column;
-}
-
-.stat-item strong {
-  font-family: var(--font-heading);
-  font-size: 1.5rem;
-  color: var(--rose-accent);
-}
-
-.stat-item span {
-  font-size: 0.875rem;
-  color: var(--warm-taupe);
-}
-
-.hero-image {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.oval-frame {
-  width: 400px;
-  height: 500px;
-  border-radius: 50% / 60%;
-  overflow: hidden;
-  border: 4px solid var(--sand);
-  box-shadow: 0 10px 40px rgba(0,0,0,0.1);
-}
-
-.oval-frame img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
 @media (max-width: 968px) {
-  .hero-container {
-    grid-template-columns: 1fr;
-    text-align: center;
+  .hero {
+    min-height: auto;
+    padding: var(--spacing-lg) 0;
   }
   
+  .hero-container {
+    grid-template-columns: 1fr;
+    text-align: left;
+    gap: var(--spacing-md);
+  }
+  
+  /* Keep image and content side by side on mobile */
   .hero-content {
     max-width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Move image next to name, LinkedIn style */
+  .hero-image {
+    float: right;
+    margin-left: var(--spacing-md);
+    margin-bottom: var(--spacing-sm);
   }
   
   .hero-buttons {
-    justify-content: center;
+    justify-content: flex-start;
+    clear: both;
   }
   
   .quick-stats {
-    justify-content: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: var(--spacing-md);
+    clear: both;
   }
   
   .oval-frame {
-    width: 300px;
-    height: 375px;
+    width: 120px;
+    height: 150px;
   }
 }
 
+/* Even smaller screens */
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 1.75rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 0.9rem;
+  }
+  
+  .hero-value-prop {
+    font-size: 0.95rem;
+    clear: both;
+  }
+  
+  .oval-frame {
+    width: 100px;
+    height: 125px;
+  }
+  
+  .quick-stats {
+    gap: var(--spacing-sm);
+  }
+  
+  .stat-item strong {
+    font-size: 1.1rem;
+  }
+  
+  .stat-item span {
+    font-size: 0.75rem;
+  }
+}
 /* ====================================
    ABOUT SECTION
    ==================================== */
