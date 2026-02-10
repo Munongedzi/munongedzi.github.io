@@ -1,11 +1,9 @@
 ---
 layout: project
-title: Customer Churn Prediction System
-outcome: Improved retention by 25% through early intervention
+title: Operations Monitoring & Insights Platform — Beyond Engineering
+outcome: Enabled earlier detection of system risks and faster, more precise incident response through real-time analytics and actionable dashboards. 
 tags: [Machine Learning, Analytics, Business Impact]
 image: /assets/img/projects/churn-prediction.jpg
-github_url: 
-demo_url: 
 ---
 
 ## Problem
