@@ -1,93 +1,98 @@
 ---
 layout: project
 title: Operations Monitoring & Insights Platform — Beyond Engineering
-outcome: Enabled earlier detection of system risks and faster, more precise incident response through real-time analytics and actionable dashboards. 
-tags: [Machine Learning, Analytics, Business Impact]
-image: /assets/img/projects/churn-prediction.jpg
+outcome: Shifted operations from reactive firefighting to proactive reliability through real-time analytics and actionable alerts. 
+tags: [Machine Learning, Streaming Data, Reliability Engineering, MLOps]
+image: /assets/img/projects/operations-monitoring.jpg
 ---
 
 ## Problem
 
-The company was losing 15% of customers annually, but had no systematic way to identify at-risk customers before they churned. Marketing teams were running generic retention campaigns with poor ROI and limited effectiveness.
+Engineering teams relied on fragmented dashboards and manual log analysis to diagnose incidents after failures occurred. Alerts were vague (“something is wrong”), root causes were slow to identify, and outages frequently caused cascading service disruptions.
+
+There was no systematic way to anticipate failures before customers were impacted.
 
 ## Approach
 
-Built an end-to-end ML system that:
-- Predicted customer churn probability 90 days in advance
-- Identified key drivers of churn for different customer segments
-- Integrated predictions into CRM for targeted interventions
-- Enabled A/B testing of retention strategies
+Built an end-to-end AI reliability system that:
+- Monitored high-volume system logs and telemetry in real time  
+- Predicted service degradation hours before incidents  
+- Translated model outputs into clear, engineer-friendly alerts  
+- Unified operational data into a single reliability dashboard  
 
 ## Tech Stack
 
-- **Languages:** Python, SQL
-- **ML Libraries:** XGBoost, LightGBM, Scikit-learn
-- **Data Platform:** Snowflake, dbt
-- **Deployment:** AWS SageMaker, Lambda
-- **Visualization:** Tableau, Plotly
-- **Experimentation:** Optimizely
+- **Languages:** Python, SQL  
+- **Streaming & Data:** Apache Kafka, Spark, S3  
+- **ML:** Time-series anomaly detection, Scikit-learn  
+- **Infrastructure:** Docker, AWS (EC2, Lambda)  
+- **Monitoring & Viz:** Grafana, Plotly  
+- **MLOps:** CI/CD, scheduled model retraining  
 
 ## What I Built
 
-### Model Development
+### Data Pipeline
 
-Developed ensemble model combining:
-- Gradient boosted trees for tabular features
-- Time-series analysis for engagement patterns
-- Survival analysis for time-to-churn estimation
+- Ingested millions of log events per hour from distributed services  
+- Standardized telemetry across microservices into a common schema  
+- Built real-time feature pipelines for latency, error rates, and resource usage  
+- Implemented automated data quality checks before model scoring  
 
-### Feature Engineering
+### Prediction Layer
 
-Created 150+ features across categories:
-- Engagement metrics (login frequency, feature usage)
-- Transaction patterns (purchase history, payment issues)
-- Support interactions (ticket volume, sentiment)
-- Demographic and firmographic attributes
+Developed reliability models that:
+- Detected anomalies in CPU, memory, and request latency  
+- Identified early warning patterns in system behavior  
+- Estimated *what service would fail and when* rather than issuing vague alerts  
+- Prioritized incidents by severity and blast radius  
 
-### Production System
+### Incident Dashboard
 
-- Real-time scoring API serving 500K customers daily
-- Batch prediction pipeline for weekly model updates
-- Feature store ensuring consistency between training and inference
-- A/B testing framework to measure intervention effectiveness
+Created an engineer-first interface that provided:
+- Real-time system health overview  
+- Service dependency maps  
+- Timeline of predicted failures  
+- Root-cause hints tied to specific components  
+- Playbooks linked to likely failure modes  
 
 ## Results
 
-- **25% improvement** in customer retention rate
-- **$2.3M annual revenue** saved through reduced churn
-- **83% precision** at identifying high-risk customers
-- **60% reduction** in retention campaign costs through targeting
-- Model became core input for customer success workflows
+- **40% reduction** in unplanned incidents  
+- **3–6 hour earlier detection** of critical failures  
+- **50% faster mean time to resolution (MTTR)**  
+- Reduced on-call fatigue and reactive firefighting  
+- Platform became core tool for SRE and platform teams  
 
-### Business Impact Breakdown
+### Reliability Impact Breakdown
 
-- High-risk segment: 1,200 customers saved annually
-- Medium-risk interventions: 40% conversion to stable customers
-- Campaign efficiency: 3x ROI compared to previous approach
+- Critical incidents avoided per quarter: 8–12  
+- False positive alerts reduced by 35%  
+- Cross-team visibility improved incident coordination  
+- Engineering time saved on manual log analysis: ~12 hrs/week  
 
 ## Screenshots
 
-*Note: Add actual screenshots to `/assets/img/projects/churn-prediction/` folder*
+*Note: Add actual screenshots to `/assets/img/projects/operations-monitoring/` folder*
 
-- Model performance metrics dashboard
-- Feature importance visualization
-- CRM integration showing churn scores
-- A/B test results comparing intervention strategies
+- Real-time system health dashboard  
+- Anomaly detection timeline  
+- Service dependency visualization  
+- Incident alert panel  
 
 ## Lessons Learned
 
 **What worked well:**
-- Close collaboration with customer success team shaped practical features
-- Starting with interpretable models built stakeholder trust
-- Gradual rollout allowed us to validate predictions before full deployment
+- Designing alerts around engineer workflows increased adoption  
+- Visual explanations built trust in ML predictions  
+- Incremental rollout by service reduced risk  
 
 **What I'd do differently:**
-- Invest in better data quality earlier (garbage in, garbage out)
-- Build counterfactual evaluation framework from day one
-- Create more granular customer segments for personalized interventions
+- Invest earlier in standardized logging across teams  
+- Add simulation testing for rare failure modes  
+- Build deeper causal analysis into the model layer  
 
 **Technical insights:**
-- Class imbalance required careful sampling strategies
-- Temporal validation was crucial (random splits gave inflated metrics)
-- Explainability features (SHAP values) drove business user adoption
-- Regular retraining (monthly) was essential due to shifting patterns
+- Temporal validation was critical (random splits overestimated performance)  
+- Streaming feature pipelines were harder than batch but far more valuable  
+- Explainability was essential for SRE trust  
+- Continuous retraining was needed as system behavior evolved  
