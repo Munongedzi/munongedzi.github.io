@@ -2,18 +2,10 @@
 document.addEventListener('DOMContentLoaded', function() {
   const navToggle = document.getElementById('navToggle');
   const navMenu = document.getElementById('navMenu');
-  const body = document.body;
   
   if (navToggle && navMenu) {
     navToggle.addEventListener('click', function() {
       navMenu.classList.toggle('active');
-      
-      // Prevent body scroll when menu is open
-      if (navMenu.classList.contains('active')) {
-        body.style.overflow = 'hidden';
-      } else {
-        body.style.overflow = '';
-      }
       
       // Animate hamburger
       const spans = navToggle.querySelectorAll('span');
@@ -33,27 +25,11 @@ document.addEventListener('DOMContentLoaded', function() {
     navLinks.forEach(link => {
       link.addEventListener('click', function() {
         navMenu.classList.remove('active');
-        body.style.overflow = '';
         const spans = navToggle.querySelectorAll('span');
         spans[0].style.transform = 'none';
         spans[1].style.opacity = '1';
         spans[2].style.transform = 'none';
       });
-    });
-    
-    // Close menu when clicking outside
-    document.addEventListener('click', function(event) {
-      const isClickInsideNav = navMenu.contains(event.target);
-      const isClickOnToggle = navToggle.contains(event.target);
-      
-      if (!isClickInsideNav && !isClickOnToggle && navMenu.classList.contains('active')) {
-        navMenu.classList.remove('active');
-        body.style.overflow = '';
-        const spans = navToggle.querySelectorAll('span');
-        spans[0].style.transform = 'none';
-        spans[1].style.opacity = '1';
-        spans[2].style.transform = 'none';
-      }
     });
   }
   
