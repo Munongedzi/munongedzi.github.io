@@ -3,7 +3,7 @@ layout: project
 title: HR Knowledge Assist(RAG) — Research & Productivity Assistant
 outcome: Enabled intelligent, secure access to personal and team knowledge
 tags: [RAG, Vector Databases, Generative AI, Privacy]
-image: /assets/img/projects/knowledge-assistant.jpg
+image: /assets/img/projects/knowledge-assistant.jpeg
 ---
 
 ## Problem
