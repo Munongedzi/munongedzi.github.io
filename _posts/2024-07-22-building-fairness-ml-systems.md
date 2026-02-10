@@ -2,7 +2,7 @@
 layout: post
 title: "Building Fairness into ML Systems: A Practical Guide"
 date: 2024-07-22
-excerpt: Responsible AI isn't just an ethics exercise—it's essential for building systems that work for everyone. Here's how to implement fairness in practice.
+excerpt: Responsible AI isn't just an ethics exercise, it's essential for building systems that work for everyone. Here's how to implement fairness in practice.
 ---
 
 When I started working on ML bias detection, I quickly realized that fairness isn't a checkbox you tick after building your model. It's a fundamental design principle that needs to be embedded throughout the entire ML lifecycle.
