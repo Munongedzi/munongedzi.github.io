@@ -3,7 +3,7 @@ layout: project
 title: Research & Evidence Pipeline — UNESCO
 outcome: Automated 90% of manual document routing that empowered non-technical leaders to make ethical, data-informed decisions.
 tags: [NLP, Deep Learning, Automation]
-image: /assets/img/projects/document-classification.jpg
+image: /assets/img/projects/document-classification.jpeg
 ---
 
 ## Problem
