@@ -3,7 +3,7 @@ layout: project
 title: Operations Monitoring & Insights Platform — Beyond Engineering
 outcome: Shifted operations from reactive firefighting to proactive reliability through real-time analytics and actionable alerts. 
 tags: [Machine Learning, Streaming Data, Reliability Engineering, MLOps]
-image: /assets/img/projects/operations-monitoring.jpg
+image: /assets/img/projects/operations-monitoring.jpeg
 ---
 
 ## Problem
