@@ -1,4 +1,4 @@
-# Portfolio Website - Munongedzi "Muno" Mabhoko
+# Portfolio Website - Munongedzi Mabhoko
 
 A professional portfolio website built with Jekyll for GitHub Pages, featuring a warm neutral design aesthetic with editorial serif headings and dark panel sections.
 
