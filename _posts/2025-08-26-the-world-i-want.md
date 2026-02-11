@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "The World I Want: Governing AI for Human Dignity"
-date: 2025-02-11
+date: 2025-08-26
 excerpt: Artificial intelligence is reshaping society faster than our governance systems can keep up. This essay imagines a future where AI serves human dignity through transparency, fairness, and accountable governance.
 ---
 
