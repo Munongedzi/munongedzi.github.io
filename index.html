@@ -2,6 +2,12 @@
 layout: default
 title: Home
 ---
+<!-- Shared sticky photo (one photo for Hero + About) -->
+<div class="floating-photo" id="floatingPhoto">
+  <div class="photo-frame">
+    <img src="{{ '/assets/img/about-photo.jpeg' | relative_url }}" alt="Muno headshot">
+  </div>
+</div>
 
 <!-- Hero Section -->
 <section id="home" class="hero">
@@ -34,12 +40,6 @@ title: Home
                     <strong>AI Engineering</strong>
                     <span>Current Focus</span>
                 </div>
-            </div>
-        </div>
-        
-        <div class="hero-image">
-            <div class="oval-frame">
-                <img src="{{ '/assets/img/about-photo.jpeg' | relative_url }}" alt="Munongedzi Mabhoko">
             </div>
         </div>
     </div>
