@@ -1285,12 +1285,18 @@ textarea:focus {
 
 .floating-photo {
   position: fixed;
-  right: clamp(16px, 4vw, 48px);
-  top: 120px; /* tweak if your navbar overlaps */
+  top: 160px;
+  right: calc((100vw - var(--max-width)) / 2 + var(--spacing-md));
   z-index: 50;
-  width: min(420px, 42vw);
-  pointer-events: none; /* so it never blocks clicking buttons */
+  width: min(420px, 40vw);
+  pointer-events: none;
   transition: opacity 0.35s ease, transform 0.35s ease;
+}
+
+@media (max-width: 1100px) {
+  .floating-photo {
+    right: var(--spacing-md);
+  }
 }
 
 .floating-photo .photo-frame {
@@ -1320,7 +1326,12 @@ textarea:focus {
 .floating-photo.is-hidden {
   opacity: 0;
   transform: translateY(12px);
+  pointer-events: none;
 }
+.hero-container {
+  grid-template-columns: 1fr;
+}
+
 
 /* Optional: Slightly smaller during About for a “moves into about” feel */
 .floating-photo.is-about {
