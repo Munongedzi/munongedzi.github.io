@@ -1279,3 +1279,71 @@ textarea:focus {
     page-break-inside: avoid;
   }
 }
+/* ====================================
+   ONE PHOTO that stays through HERO + ABOUT, then fades before SKILLS
+   ==================================== */
+
+.floating-photo {
+  position: fixed;
+  right: clamp(16px, 4vw, 48px);
+  top: 120px; /* tweak if your navbar overlaps */
+  z-index: 50;
+  width: min(420px, 42vw);
+  pointer-events: none; /* so it never blocks clicking buttons */
+  transition: opacity 0.35s ease, transform 0.35s ease;
+}
+
+.floating-photo .photo-frame {
+  width: 100%;
+  aspect-ratio: 4 / 5;       /* portrait like your reference */
+  border-radius: 0;          /* square corners */
+  overflow: hidden;
+  border: 2px solid var(--sand);
+  box-shadow: 0 10px 40px rgba(0,0,0,0.12);
+  background: var(--ivory);
+}
+
+.floating-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Make room so hero/about text doesn't sit under the fixed photo */
+.hero-container,
+.about-grid {
+  padding-right: min(460px, 48vw);
+}
+
+/* Fade-out state when entering Technical Expertise (Skills) */
+.floating-photo.is-hidden {
+  opacity: 0;
+  transform: translateY(12px);
+}
+
+/* Optional: Slightly smaller during About for a “moves into about” feel */
+.floating-photo.is-about {
+  width: min(360px, 36vw);
+  top: 140px;
+}
+
+/* Mobile: don't do the floating effect (keeps layout clean) */
+@media (max-width: 968px) {
+  .floating-photo {
+    position: static;
+    width: 100%;
+    max-width: 520px;
+    margin: 0 auto var(--spacing-md);
+    pointer-events: auto;
+  }
+
+  .hero-container,
+  .about-grid {
+    padding-right: 0;
+  }
+
+  .floating-photo.is-hidden {
+    display: none;
+  }
+}
