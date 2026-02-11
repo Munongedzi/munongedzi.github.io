@@ -2,13 +2,6 @@
 layout: default
 title: Home
 ---
-<!-- Shared sticky photo (one photo for Hero + About) -->
-<div class="floating-photo" id="floatingPhoto">
-  <div class="photo-frame">
-    <img src="{{ '/assets/img/about-photo.jpeg' | relative_url }}" alt="Muno headshot">
-  </div>
-</div>
-
 <!-- Hero Section -->
 <section id="home" class="hero">
     <div class="sparkle sparkle-top-left"></div>
@@ -26,7 +19,12 @@ title: Home
                 <a href="#projects" class="btn-primary">View Projects</a>
                 <a href="#contact" class="btn-secondary">Contact Me</a>
             </div>
-            
+            <div class="hero-image">
+            <div class="square-frame">
+              <img src="{{ '/assets/img/about-photo.jpeg' | relative_url }}" alt="Muno headshot">
+            </div>
+          </div>
+
             <div class="quick-stats">
                 <div class="stat-item">
                     <strong>6+</strong>
