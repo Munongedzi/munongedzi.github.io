@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const photo = document.getElementById("floatingPhoto");
   const home = document.getElementById("home");
   const about = document.getElementById("about");
   const skills = document.getElementById("skills");
