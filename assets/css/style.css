@@ -813,8 +813,8 @@ section {
 
 .proof-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: var(--spacing-lg);
+  grid-template-columns: repeat(5, 1fr);
+  gap: var(--spacing-md);
   align-items: start;
 }
 
@@ -884,8 +884,15 @@ section {
   text-decoration: underline;
 }
 
-/* Tablet - 2 columns */
+/* Tablet - 3 columns */
 @media (max-width: 1100px) {
+  .proof-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Smaller tablet - 2 columns */
+@media (max-width: 768px) {
   .proof-grid {
     grid-template-columns: repeat(2, 1fr);
   }
