@@ -204,8 +204,8 @@ section {
 }
 
 .dark-panel .btn-secondary:hover {
-  background-color: var(--ivory);
-  color: var(--charcoal);
+  background-color: var(--rose-accent);
+  color: var(--white);
 }
 
 .btn-text {
