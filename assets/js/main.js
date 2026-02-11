@@ -74,3 +74,36 @@
     font-size: 0.75rem;
   }
 }
+document.addEventListener("DOMContentLoaded", () => {
+  const photo = document.getElementById("floatingPhoto");
+  const about = document.getElementById("about");
+  const skills = document.getElementById("skills");
+
+  if (!photo) return;
+
+  // Add "is-about" while About section is in view (optional sizing/position tweak)
+  if (about) {
+    const aboutObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((e) => {
+          photo.classList.toggle("is-about", e.isIntersecting);
+        });
+      },
+      { threshold: 0.25 }
+    );
+    aboutObserver.observe(about);
+  }
+
+  // Hide the photo when Skills / Technical Expertise is reached
+  if (skills) {
+    const skillsObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((e) => {
+          photo.classList.toggle("is-hidden", e.isIntersecting);
+        });
+      },
+      { threshold: 0.05 }
+    );
+    skillsObserver.observe(skills);
+  }
+});
