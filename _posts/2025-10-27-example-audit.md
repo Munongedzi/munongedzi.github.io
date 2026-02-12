@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Quantifying Representational Bias in UTKFace: A Fairness Audit of Facial Datasets"
-date: 2025-02-11
+date: 2025-10-27
 excerpt: This post summarizes a dataset-level fairness audit of UTKFace, revealing severe demographic imbalances across race, gender, and age and discussing their implications for downstream AI bias.
 ---
 
