@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Algorithmic Harm, Governance, and Ethics: Situating Weapons of Math Destruction"
-date: 2025-02-11
+date: 2025-09-02
 excerpt: This essay examines how large-scale algorithmic systems can produce structural harm through opacity, scale, and feedback loops, and argues for more substantive, participatory forms of AI governance.
 ---
 
