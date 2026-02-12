@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "AI Global Frameworks, Implementation Gaps"
-date: 2025-02-11
+date: 2025-12-02
 excerpt: A comparative synthesis of major AI governance frameworks and 2023–2025 evidence showing persistent implementation gaps, misalignment with public concerns, and design principles to strengthen accountability, capacity, and trust.
 ---
 
