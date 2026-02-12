@@ -1,14 +1,12 @@
 ---
 layout: post
 title: "Automating Inequality and the Governance of AI in Social Welfare"
-date: 2025-02-11
+date: 2025-09-07
 excerpt: Situating Virginia Eubanks’s “digital poorhouse” argument across three welfare cases, this essay argues that automation is not inherently unjust but becomes dangerous without transparency, rights of redress, and participatory governance.
 ---
 
 ## Automating Inequality and the Governance of AI in Social Welfare
 
-**Munongedzi Mabhoko, Clarkson University, MSc Computer Science**  
-Email: [mabhokm@clarkson.edu](mailto:mabhokm@clarkson.edu)
 
 ## Introduction
 
