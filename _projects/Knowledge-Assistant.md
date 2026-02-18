@@ -20,7 +20,7 @@ Built a secure AI assistant that could:
 ## Tech Stack
 
 - **AI:** RAG architecture  
-- **Storage:** Vector database (Pinecone/Weaviate)  
+- **Storage:** Vector database 
 - **NLP:** Embeddings + semantic retrieval  
 - **Languages:** Python  
 - **Interface:** Streamlit chat UI  
