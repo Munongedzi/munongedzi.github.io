@@ -23,7 +23,7 @@ Built a deep learning NLP system that:
 - **Languages:** Python, JavaScript
 - **ML/NLP:** BERT, Transformers, spaCy, Tesseract OCR
 - **Frameworks:** PyTorch, Hugging Face
-- **Backend:** FastAPI, Redis
+- **Backend:** FastAPI
 - **Frontend:** React, TypeScript
 - **Infrastructure:** Docker, Kubernetes, GCP
 - **Storage:** MongoDB, Google Cloud Storage
@@ -55,27 +55,11 @@ Built a deep learning NLP system that:
 ## Results
 
 - **90% automation rate** (documents routed without human review)
-- **Processing time reduced** from 3-4 days to <1 hour
+- **Processing time reduced** from 3-4 days to <3 hours
 - **96% accuracy** on validation set, 94% in production
 - **2 FTE saved** through automation (redeployed to higher-value work)
 - **8% reduction** in customer complaints related to document handling
 
-### Impact Metrics
-
-- 9,000 documents automated per month
-- $180K annual cost savings
-- Customer satisfaction score improved from 3.2 to 4.5/5
-- System uptime: 99.8%
-
-## Screenshots
-
-*Note: Add actual screenshots to `/assets/img/projects/document-classification/` folder*
-
-- Upload interface with real-time classification
-- Admin dashboard showing classification accuracy trends
-- Confidence score distribution visualization
-- Human review queue interface
-- Performance comparison before/after automation
 
 ## Lessons Learned
 
