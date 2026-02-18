@@ -70,15 +70,6 @@ Created an engineer-first interface that provided:
 - Cross-team visibility improved incident coordination  
 - Engineering time saved on manual log analysis: ~12 hrs/week  
 
-## Screenshots
-
-*Note: Add actual screenshots to `/assets/img/projects/operations-monitoring/` folder*
-
-- Real-time system health dashboard  
-- Anomaly detection timeline  
-- Service dependency visualization  
-- Incident alert panel  
-
 ## Lessons Learned
 
 **What worked well:**
