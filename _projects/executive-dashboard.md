@@ -20,8 +20,7 @@ Designed and built a real-time analytics dashboard that:
 
 ## Tech Stack
 
-- **Visualization:** Tableau, D3.js
-- **Data Warehouse:** Snowflake
+- **Visualization:** PowerBi, D3.js
 - **ETL:** dbt, Apache Airflow
 - **Languages:** SQL, Python
 - **APIs:** REST, GraphQL
@@ -64,7 +63,6 @@ Designed and built a real-time analytics dashboard that:
 
 ### Key Features
 
-- Mobile-responsive design for on-the-go access
 - Automated email reports with key insights
 - Natural language search to find specific metrics
 - Customizable alerts for threshold breaches
@@ -80,20 +78,9 @@ Designed and built a real-time analytics dashboard that:
 
 ### Adoption Metrics
 
-- 500+ daily active users across organization
 - Average session time: 8 minutes (high engagement)
 - 95% user satisfaction score
 - Reduced ad-hoc data requests to analytics team by 60%
-
-## Screenshots
-
-*Note: Add actual screenshots to `/assets/img/projects/executive-dashboard/` folder*
-
-- Executive overview dashboard
-- Sales pipeline visualization
-- Marketing attribution waterfall
-- Mobile view examples
-- Custom alert configuration
 
 ## Lessons Learned
 
